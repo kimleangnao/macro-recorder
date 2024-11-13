@@ -1,0 +1,48 @@
+{
+  "name": "macro",
+  "version": "1.0.0",
+  "description": "A desktop macro recording application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Ares",
+  "license": "ISC",
+  "build": {
+    "appId": "com.ares.macrokeeper",
+    "productName": "MacroKeeper",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "events.json",
+      "index.css",
+      "public"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^10.4.7",
+    "electron-builder": "^22.10.5",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "iohook": "^0.9.3",
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.15.0"
+  }
+}

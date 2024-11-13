@@ -1,0 +1,198 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    font-family: sans-serif;
+}
+
+.app_buttons{
+    width: 100%;
+    height: 100px;
+    background-color:#353537;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.app_buttons_wrap{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.app_buttons_wrap_square{
+    min-width:  80px;
+    padding: 0 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    border-radius: 2px;
+    border: unset;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.app_buttons_wrap_square:hover{
+    cursor: pointer;
+}
+.app_buttons_wrap_btns{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+.app_buttons_wrap_btns_square{
+    min-width:  80px;
+    padding: 0 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: unset;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.app_buttons_wrap_btns_square:hover{
+    cursor: pointer;
+}
+
+.background_color_playBtn{
+    background-color: #606160;
+}
+.background_color_playBtn-active{
+    background-color: #579564;
+}
+.background_color_recordBtn{
+    background-color: #606160;
+}
+.background_color_recordBtn-active{
+    background-color: #7A66C5;
+}
+.background_color_recordBtn-recording{
+    background-color: #a36303;
+}
+.background_color_stopBtn{
+    background-color: #606160;
+}
+.background_color_stopBtn-active{
+    background-color: #D84100;
+}
+.app_replays{
+    width: 100%;
+    height: 321px;
+    overflow-y: auto;
+    background-color:#EAEAE2;
+    display: none;
+}
+
+.app_replays_wrap{
+    width: 100%;
+    height: 50px;
+    background-color: #444141;
+    margin-bottom: 2px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+}
+.app_replays_wrap:hover{
+    cursor: pointer;
+    background-color: #579564;
+}
+.app_replays_wrap_order{
+    width: 50px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    border-right: 2px solid white;
+}
+.app_replays_wrap_name{
+    width: 521px;
+    height: 100%;
+    line-height: 50px;
+    padding-left: 10px;
+    border-right: 2px solid white;
+}
+.app_replays_wrap_timer{
+    width: 149px;
+    height: 100%;
+   line-height: 50px;
+   text-align: center;
+}
+
+.app_info{
+    width: 100%;
+    height: 40px;
+    background-color:#534C4C;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.app_info_recordsText{
+    margin-left: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.app_info_changes{
+    width: 180px;
+    margin-right: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app_info_changes_layout{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.app_info_changes_layout_box{
+    width: 30px;
+    height: 30px;
+    background-color: #676464;
+  
+}
+.app_info_changes_layout_box:hover{
+    cursor: pointer;
+    background-color: #AAC6C3;
+}
+
+.app_info_changes_companyName{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app_info_changes_companyName_logo{
+    object-fit: cover;
+}
+.app_info_changes_companyName_title{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+}
+

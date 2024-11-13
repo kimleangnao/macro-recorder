@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeper - Win with ease!</title>
+    <link href="./index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app">
+        <section class="app_buttons">
+            <div class="app_buttons_wrap">
+                <button id="js_replay"  class="app_buttons_wrap_square background_color_playBtn">
+                    <i class="fa-solid fa-play"></i> PLAY
+                </button>
+                <div  class="app_buttons_wrap_btns">
+                    <button id="js_startRecording" class="app_buttons_wrap_btns_square background_color_recordBtn"><i class="fa-solid fa-play"></i> RECORD(F5)</button>
+                    <button id="js_stopRecording" class="app_buttons_wrap_btns_square background_color_recordBtn"><i class="fa-solid fa-play"></i> STOP(F6)</button>
+                </div>
+            </div>
+        </section>
+        <section id="js_display" class="app_replays">
+            <div class="app_replays_wrap">
+                <div class="app_replays_wrap_order">
+                    1
+                </div>
+                <div class="app_replays_wrap_name">
+                    Autoclick
+                </div>
+                <div class="app_replays_wrap_timer">
+                    0:21
+                </div>
+            </div>            
+            <div class="app_replays_wrap">
+                <div class="app_replays_wrap_order">
+
+                </div>
+                <div class="app_replays_wrap_name">
+
+                </div>
+                <div class="app_replays_wrap_timer">
+
+                </div>
+            </div>
+            <div class="app_replays_wrap">
+                <div class="app_replays_wrap_order">
+
+                </div>
+                <div class="app_replays_wrap_name">
+
+                </div>
+                <div class="app_replays_wrap_timer">
+
+                </div>
+            </div>
+        </section>
+        <section class="app_info">
+            <div class="app_info_recordsText">
+                Recording (0)
+            </div>
+            <div class="app_info_changes">
+                <div class="app_info_changes_layout">
+                    <div id="js_layout_compact" class="app_info_changes_layout_box">
+
+                    </div>  
+                    <div id="js_layout_details" class="app_info_changes_layout_box">
+
+                    </div>
+                </div>
+                <div class="app_info_changes_companyName">
+                    <img src="./public/images/favicon_16x16.png" class="app_info_changes_companyName_logo"/>
+                    <div class="app_info_changes_companyName_title">KEEPER</div>
+                </div>
+            </div>
+        </section>
+    </div>
+ 
+    <script src="./renderer.js"> </script>
+</body>
+</html> 
